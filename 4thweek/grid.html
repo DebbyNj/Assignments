@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grid Layout</title>
+    <style>
+        .body{
+            margin: 0;
+        }
+
+        .Grid-Container{
+    background-color: hsl(249, 10%, 26%);
+    gap: 5px;
+    display: grid;
+    padding: 10px;
+    margin-right: 50px;
+    width: 50vw;
+    height:50vh;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    }
+
+.Item-1{
+    background-color:rgb(255, 94, 0);
+    text-align: center;
+    padding: 50px;
+    font-size: 16px;
+    grid-column-start: 1;
+    grid-column-end: 3;
+    grid-row: 1;
+}
+
+.Item-2{
+    background-color:rgba(255, 187, 0, 0.945);
+    text-align: center;
+    padding: 50px;
+    font-size: 16px;
+    grid-column-start: 3;
+    grid-column-end: 4;
+    grid-row: 1 / span 1;
+}
+
+.Item-3{
+    background-color:rgb(67, 214, 9);
+    text-align: center;
+    padding: 10px;
+    font-size: 16px;
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row: 2 / span 4;
+}
+
+.Item-4{
+    background-color:rgba(0, 217, 255, 0.945);
+    text-align: center;
+    padding: 45px;
+    font-size: 16px;
+    grid-column-start: 2;
+    grid-column-end: 4;
+    grid-row: 2/ span 3;
+}
+
+.Item-5{
+    background-color:rgba(0, 217, 255, 0.945);
+    text-align: center;
+    padding: 50px;
+    font-size: 16px;
+    grid-column-start: 2;
+    grid-column-end: 4;  
+}
+    </style>
+</head>
+<body>
+  <div class="Grid-Container">
+    <div class="Item-1">
+    </div>
+    <div class="Item-2">
+    </div>
+    <div class="Item-3">
+    </div>
+    <div class="Item-4">
+    </div>
+    <div class="Item-5">
+    </div>
+  </div>  
+</body>
+</html>
